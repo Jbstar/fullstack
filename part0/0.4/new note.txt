@@ -1,0 +1,9 @@
+title new note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+note right of browser: Sending the new note input content to the server
+server->browser: HTTP 302
+note left of server: Acknoledge the recepetion and trigger a redirection
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/new_note
+server->browser: HTML-code
+note left of server: We are again in the initial state of the website

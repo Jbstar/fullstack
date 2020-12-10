@@ -1,0 +1,5 @@
+title new note spa
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server->browser: HTTP 201 {"message":"note created"}
+note right of browser: The webpage remains consisetent with the db since we have the confirmation of the note creation
