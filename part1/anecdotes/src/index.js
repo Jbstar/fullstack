@@ -35,7 +35,6 @@ const App = (props) => {
       <Title text='Anecdote wiht most votes'/>
       <Anecdote text={props.anecdotes[getMostPopular(points)]}/>
       <Votes nbVote={points[getMostPopular(points)]}/>
-
     </div>
   )
 }
